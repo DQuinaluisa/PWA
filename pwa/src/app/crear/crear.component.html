@@ -1,0 +1,28 @@
+<h1>Crear Usuario</h1>
+<div class="card" style="width: 18rem;">
+
+  <div class="card-body">
+
+
+    <label >Nombre </label>
+    <input type="text" [(ngModel)]="nombre"  class="form-control"
+      required autofocus >
+
+    <label >Apellido </label>
+    <input type="text"  [(ngModel)]="apellido" class="form-control"
+    required autofocus  >
+
+    <label >Cedula </label>
+    <input type="text" [(ngModel)]="identificacion" class="form-control"
+    required autofocus
+      >
+
+
+      <label >Direccion </label>
+      <input type="text" [(ngModel)]="direccion"  class="form-control"
+      required autofocus >
+
+
+      <br>
+
+      <button type="button" class="btn btn-primary btn-sm btn-block " routerLink="/ver"  (click)="create()" >Crear</button>

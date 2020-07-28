@@ -1,0 +1,39 @@
+<h2> Lista Estudiantes </h2>
+
+<div class="row">
+    <div class="col-md-4 p-4" *ngFor="let usr of user" >
+
+      <div class="card" >
+
+        <div class="card-body">
+          <label for=""> Nombre:
+                {{usr.nombre}}
+
+                {{usr.apellido}}
+          </label>
+          <br>
+          <label for=""> Cedula:
+
+            {{usr.identificacion}}
+          </label>
+          <br>
+          <label for=""> Direccion
+
+            {{usr.direccion}}
+          </label>
+        </div>
+
+        <div class="card-footer">
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+</div>
